@@ -8,7 +8,6 @@ using namespace std;
 
 class CashRegister {
 private:
-	float static totalCash;
 	int hundredDollars;
 	int fiftyDollars;
 	int twentyDollars;
@@ -41,11 +40,12 @@ public:
 	void setQuarters(int quarters);
 	int getTenDollars() const;
 	void setTenDollars(int tenDollars);
-	float getTotalCash() const;
 	int getTwentyDollars() const;
 	void setTwentyDollars(int twentyDollars);
 
+	float getTotalAmount() const;
 	void restockCashRegiser();
+	void restockCashRegiser(int hundreds, int fifty, int twenty, int ten, int five, int one, int quarter, int dime, int nickel, int penny);
 };
 
 #endif

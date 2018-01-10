@@ -4,6 +4,24 @@
 
 using namespace std;
 
+
+/**
+ * 	Assuming that the store has enough money to supply a cash register, the default cash and coin
+ * 	values are initialized with the following:
+ *
+ *  1	$100
+ *  2	$50
+ *  5	$20
+ *  5	$10
+ *  10	$5
+ *  10	$1
+ *  10	$0.25
+ *  10	$0.10
+ *  10	$0.05
+ *  10	$0.01
+ *
+ *  Total: $414.10
+ */
 CashRegister::CashRegister() {
 	this->hundredDollars = 1;
 	this->fiftyDollars = 2;
@@ -17,6 +35,9 @@ CashRegister::CashRegister() {
 	this->pennies = 10;
 }
 
+/**
+ * 	If the cash register is initialized with specific cash and coin amounts.
+ */
 CashRegister::CashRegister(int hundreds, int fifty, int twenty, int ten, int five, int one, int quarter, int dime, int nickle, int penny) {
 	this->hundredDollars = hundreds;
 	this->fiftyDollars = fifty;
@@ -102,10 +123,6 @@ void CashRegister::setTenDollars(int tenDollars) {
 	this->tenDollars = tenDollars;
 }
 
-float CashRegister::getTotalCash() const {
-	return totalCash;
-}
-
 int CashRegister::getTwentyDollars() const {
 	return twentyDollars;
 }
@@ -114,6 +131,19 @@ void CashRegister::setTwentyDollars(int twentyDollars) {
 	this->twentyDollars = twentyDollars;
 }
 
+
+
+float CashRegister::getTotalAmount() const {
+	float totalAmount;
+	totalAmount = (100 * hundredDollars) + (50 * fiftyDollars) + (20 * twentyDollars) + (10 * tenDollars) + (5 * fiveDollars) + (oneDollars) + (0.25 * quarters) + (0.10 * dimes) + (0.05 * nickles) + (0.01 * pennies);
+	return totalAmount;
+}
+
+
+/**
+ * 	Default re-stocking of the Cash Register.
+ * 	Any remaining amounts will be added on.
+ */
 void CashRegister::restockCashRegiser() {
 	this->hundredDollars += 1;
 	this->fiftyDollars += 2;
@@ -125,4 +155,21 @@ void CashRegister::restockCashRegiser() {
 	this->dimes += 10;
 	this->nickles += 10;
 	this->pennies += 10;
+}
+
+/**
+ * 	Re-stock the Cash Register with specific values.
+ * 	Any remaining amounts will be added on.
+ */
+void CashRegister::restockCashRegiser(int hundreds, int fifty, int twenty, int ten, int five, int one, int quarter, int dime, int nickle, int penny) {
+	this->hundredDollars += hundreds;
+	this->fiftyDollars += fifty;
+	this->twentyDollars += twenty;
+	this->tenDollars += ten;
+	this->fiveDollars += five;
+	this->oneDollars += one;
+	this->quarters += quarter;
+	this->dimes += dime;
+	this->nickles += nickle;
+	this->pennies += penny;
 }
