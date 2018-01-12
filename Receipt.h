@@ -10,12 +10,12 @@
 class Receipt {
 private:
 	enum PaymentType{ Cash, Credit_Card, Gift_Card };
-	vector<Item> itemList;
+	std::vector<Item> itemList;
 
 public:
 	Receipt();
-	const vector<Item>& getItemList() const;
-	void setItemList(const vector<Item>& itemList);
+	const std::vector<Item>& getItemList() const;
+	void setItemList(const std::vector<Item>& itemList);
 
 	void addItem();
 	void removeItem();
