@@ -4,22 +4,35 @@
 #include <iostream>
 #include <string>
 
-using namespace std;
-
+/*******	Employee Class	******/
 class Employee {
 private:
-	string name;
+	std::string name;
 	long ID;
-	string title;
+	std::string title;
 
 public:
-	Employee(string name, long ID, string title);
+	Employee(std::string name, long ID, std::string title);
 	long getId() const;
 	void setId(long id);
-	const string& getName() const;
-	void setName(const string& name);
-	const string& getTitle() const;
-	void setTitle(const string& title);
+	const std::string& getName() const;
+	void setName(const std::string& name);
+	const std::string& getTitle() const;
+	void setTitle(const std::string& title);
 };
+
+
+
+/*******	Manager Class	******/
+class Manager : public Employee {
+private:
+	std::string password;
+public:
+	// Manger's password is currently hard-coded to be 1.
+	Manager(std::string name, long ID, std::string title = "Manager", std::string password = "1");
+	const std::string& getPassword() const;
+	void setPassword(const std::string& password);
+};
+
 
 #endif

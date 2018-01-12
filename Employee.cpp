@@ -4,6 +4,7 @@
 
 using namespace std;
 
+/*******	Employee Class	******/
 Employee::Employee(string name, long ID, string title) {
 	this->name = name;
 	this->ID = ID;
@@ -32,4 +33,18 @@ const string& Employee::getTitle() const {
 
 void Employee::setTitle(const string& title) {
 	this->title = title;
+}
+
+
+/*******	Manager Class	******/
+Manager::Manager(string name, long ID, string title, string password) : Employee(name, ID, title) {
+	this->password = password;
+}
+
+const std::string& Manager::getPassword() const {
+	return password;
+}
+
+void Manager::setPassword(const std::string& password) {
+	this->password = password;
 }
