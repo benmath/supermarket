@@ -29,40 +29,40 @@ class Item {
         void setCategory(const std::string& category);
 };
 
-class Food: public Item {
+class Food : public Item {
     private:
         std::string expirationDate;		// Format: MM/DD/YYYY
     public:
         Food(long SKU, std::string description, float price, int quantity, std::string brand, std::string category,
-                std::string exirationDate);
+             std::string exirationDate);
         const std::string& getExpirationDate() const;
         void setExpirationDate(const std::string& expirationDate);
 };
 
-class Clothing: public Item {
+class Clothing : public Item {
     private:
         std::string size;		// S, M, L, XL, etc.
         std::string color;		// blue, black, green, yellow, orange, etc.
     public:
         Clothing(long SKU, std::string description, float price, int quantity, std::string brand, std::string category,
-                std::string size, std::string color);
+                 std::string size, std::string color);
         const std::string& getColor() const;
         void setColor(const std::string& color);
         const std::string& getSize() const;
         void setSize(const std::string& size);
 };
 
-class Electronic: public Item {
+class Electronic : public Item {
     public:
         Electronic(long SKU, std::string description, float price, int quantity, std::string brand,
-                std::string category);
+                   std::string category);
         // category will be the type of device.
 };
 
-class Furniture: public Item {
+class Furniture : public Item {
     public:
         Furniture(long SKU, std::string description, float price, int quantity, std::string brand,
-                std::string category);
+                  std::string category);
         // category will be the room where the furniture will reside.
 };
 

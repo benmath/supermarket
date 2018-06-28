@@ -20,7 +20,7 @@ ItemFactory::ItemFactory() {
  * 	appropriately.
  */
 Item *ItemFactory::getItem(string itemType, long SKU, string description, float price, int quantity, string brand,
-        string category, string size, string color, string exirationDate) {
+                           string category, string size, string color, string exirationDate) {
 
     // Here we are going to use the Factory design pattern to conveniently select the appropriate item
 

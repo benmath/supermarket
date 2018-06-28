@@ -38,7 +38,7 @@ CashRegister::CashRegister() {
  * 	If the cash register is initialized with specific cash and coin amounts.
  */
 CashRegister::CashRegister(int hundreds, int fifty, int twenty, int ten, int five, int one, int quarter, int dime,
-        int nickle, int penny) {
+                           int nickle, int penny) {
     this->hundredDollars = hundreds;
     this->fiftyDollars = fifty;
     this->twentyDollars = twenty;
@@ -161,7 +161,7 @@ void CashRegister::restockCashRegiser() {
  * 	Any remaining amounts will be added on.
  */
 void CashRegister::restockCashRegiser(int hundreds, int fifty, int twenty, int ten, int five, int one, int quarter,
-        int dime, int nickle, int penny) {
+                                      int dime, int nickle, int penny) {
     this->hundredDollars += hundreds;
     this->fiftyDollars += fifty;
     this->twentyDollars += twenty;

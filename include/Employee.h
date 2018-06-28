@@ -22,7 +22,7 @@ class Employee {
 };
 
 /*******	Manager Class	******/
-class Manager: public Employee {
+class Manager : public Employee {
     private:
         std::string password;
     public:

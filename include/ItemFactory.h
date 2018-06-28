@@ -16,8 +16,8 @@ class ItemFactory {
     public:
         ItemFactory();
         Item *getItem(std::string itemType, long SKU, std::string description, float price, int quantity,
-                std::string brand, std::string category, std::string size = "", std::string color = "",
-                std::string exirationDate = "");
+                      std::string brand, std::string category, std::string size = "", std::string color = "",
+                      std::string exirationDate = "");
 };
 
 #endif /* ITEMFACTORY_H_ */

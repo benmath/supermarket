@@ -64,7 +64,7 @@ void Item::setSku(long sku) {
 
 /********* Food Class	***********/
 Food::Food(long SKU, std::string description, float price, int quantity, std::string brand, std::string category,
-        std::string exirationDate) :
+           std::string exirationDate) :
         Item(SKU, description, price, quantity, brand, category) {
     this->expirationDate = exirationDate;
 }
@@ -79,7 +79,7 @@ const std::string& Food::getExpirationDate() const {
 
 /********* Clothing Class	***********/
 Clothing::Clothing(long SKU, std::string description, float price, int quantity, std::string brand,
-        std::string category, std::string size, std::string color) :
+                   std::string category, std::string size, std::string color) :
         Item(SKU, description, price, quantity, brand, category) {
     this->color = color;
     this->size = size;
@@ -103,11 +103,11 @@ const std::string& Clothing::getSize() const {
 
 /********* Electronic Class	***********/
 Electronic::Electronic(long SKU, std::string description, float price, int quantity, std::string brand,
-        std::string category) :
+                       std::string category) :
         Item(SKU, description, price, quantity, brand, category) {
 }
 
 Furniture::Furniture(long SKU, std::string description, float price, int quantity, std::string brand,
-        std::string category) :
+                     std::string category) :
         Item(SKU, description, price, quantity, brand, category) {
 }

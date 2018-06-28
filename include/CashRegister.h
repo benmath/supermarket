@@ -20,7 +20,7 @@ class CashRegister {
     public:
         CashRegister();
         CashRegister(int hundreds, int fifty, int twenty, int ten, int five, int one, int quarter, int dime, int nickel,
-                int penny);
+                     int penny);
         int getDimes() const;
         void setDimes(int dimes);
         int getFiftyDollars() const;
@@ -45,7 +45,7 @@ class CashRegister {
         float getTotalAmount() const;
         void restockCashRegiser();
         void restockCashRegiser(int hundreds, int fifty, int twenty, int ten, int five, int one, int quarter, int dime,
-                int nickel, int penny);
+                                int nickel, int penny);
 };
 
 #endif
