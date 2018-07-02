@@ -52,7 +52,7 @@ CashRegister::CashRegister(int hundreds, int fifty, int twenty, int ten, int fiv
 }
 
 int CashRegister::getDimes() const {
-    return dimes;
+    return (dimes);
 }
 
 void CashRegister::setDimes(int dimes) {
@@ -60,7 +60,7 @@ void CashRegister::setDimes(int dimes) {
 }
 
 int CashRegister::getFiftyDollars() const {
-    return fiftyDollars;
+    return (fiftyDollars);
 }
 
 void CashRegister::setFiftyDollars(int fiftyDollars) {
@@ -68,7 +68,7 @@ void CashRegister::setFiftyDollars(int fiftyDollars) {
 }
 
 int CashRegister::getFiveDollars() const {
-    return fiveDollars;
+    return (fiveDollars);
 }
 
 void CashRegister::setFiveDollars(int fiveDollars) {
@@ -76,7 +76,7 @@ void CashRegister::setFiveDollars(int fiveDollars) {
 }
 
 int CashRegister::getHundredDollars() const {
-    return hundredDollars;
+    return (hundredDollars);
 }
 
 void CashRegister::setHundredDollars(int hundredDollars) {
@@ -84,7 +84,7 @@ void CashRegister::setHundredDollars(int hundredDollars) {
 }
 
 int CashRegister::getNickles() const {
-    return nickles;
+    return (nickles);
 }
 
 void CashRegister::setNickles(int nickles) {
@@ -92,7 +92,7 @@ void CashRegister::setNickles(int nickles) {
 }
 
 int CashRegister::getOneDollars() const {
-    return oneDollars;
+    return (oneDollars);
 }
 
 void CashRegister::setOneDollars(int oneDollars) {
@@ -100,7 +100,7 @@ void CashRegister::setOneDollars(int oneDollars) {
 }
 
 int CashRegister::getPennies() const {
-    return pennies;
+    return (pennies);
 }
 
 void CashRegister::setPennies(int pennies) {
@@ -108,7 +108,7 @@ void CashRegister::setPennies(int pennies) {
 }
 
 int CashRegister::getQuarters() const {
-    return quarters;
+    return (quarters);
 }
 
 void CashRegister::setQuarters(int quarters) {
@@ -116,7 +116,7 @@ void CashRegister::setQuarters(int quarters) {
 }
 
 int CashRegister::getTenDollars() const {
-    return tenDollars;
+    return (tenDollars);
 }
 
 void CashRegister::setTenDollars(int tenDollars) {
@@ -124,7 +124,7 @@ void CashRegister::setTenDollars(int tenDollars) {
 }
 
 int CashRegister::getTwentyDollars() const {
-    return twentyDollars;
+    return (twentyDollars);
 }
 
 void CashRegister::setTwentyDollars(int twentyDollars) {
@@ -136,7 +136,7 @@ float CashRegister::getTotalAmount() const {
     totalAmount = (100 * hundredDollars) + (50 * fiftyDollars) + (20 * twentyDollars) + (10 * tenDollars)
             + (5 * fiveDollars) + (oneDollars) + (0.25 * quarters) + (0.10 * dimes) + (0.05 * nickles)
             + (0.01 * pennies);
-    return totalAmount;
+    return (totalAmount);
 }
 
 /**

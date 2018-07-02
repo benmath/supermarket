@@ -15,7 +15,7 @@ Item::Item(long SKU, string description, float price, int quantity, string brand
 }
 
 const string& Item::getDescription() const {
-    return description;
+    return (description);
 }
 
 void Item::setDescription(const string& description) {
@@ -23,7 +23,7 @@ void Item::setDescription(const string& description) {
 }
 
 float Item::getPrice() const {
-    return price;
+    return (price);
 }
 
 void Item::setPrice(float price) {
@@ -31,7 +31,7 @@ void Item::setPrice(float price) {
 }
 
 int Item::getQuantity() const {
-    return quantity;
+    return (quantity);
 }
 
 void Item::setQuantity(int quantity) {
@@ -39,11 +39,11 @@ void Item::setQuantity(int quantity) {
 }
 
 long Item::getSku() const {
-    return SKU;
+    return (SKU);
 }
 
 const std::string& Item::getBrand() const {
-    return brand;
+    return (brand);
 }
 
 void Item::setBrand(const std::string& brand) {
@@ -51,7 +51,7 @@ void Item::setBrand(const std::string& brand) {
 }
 
 const std::string& Item::getCategory() const {
-    return category;
+    return (category);
 }
 
 void Item::setCategory(const std::string& category) {
@@ -74,7 +74,7 @@ void Food::setExpirationDate(const std::string& expirationDate) {
 }
 
 const std::string& Food::getExpirationDate() const {
-    return expirationDate;
+    return (expirationDate);
 }
 
 /********* Clothing Class	***********/
@@ -90,7 +90,7 @@ void Clothing::setSize(const std::string& size) {
 }
 
 const std::string& Clothing::getColor() const {
-    return color;
+    return (color);
 }
 
 void Clothing::setColor(const std::string& color) {
@@ -98,7 +98,7 @@ void Clothing::setColor(const std::string& color) {
 }
 
 const std::string& Clothing::getSize() const {
-    return size;
+    return (size);
 }
 
 /********* Electronic Class	***********/

@@ -12,7 +12,7 @@ Employee::Employee(string name, long ID, string title) {
 }
 
 long Employee::getId() const {
-    return ID;
+    return (ID);
 }
 
 void Employee::setId(long id) {
@@ -20,7 +20,7 @@ void Employee::setId(long id) {
 }
 
 const string& Employee::getName() const {
-    return name;
+    return (name);
 }
 
 void Employee::setName(const string& name) {
@@ -28,7 +28,7 @@ void Employee::setName(const string& name) {
 }
 
 const string& Employee::getTitle() const {
-    return title;
+    return (title);
 }
 
 void Employee::setTitle(const string& title) {
@@ -42,7 +42,7 @@ Manager::Manager(string name, long ID, string title, string password) :
 }
 
 const std::string& Manager::getPassword() const {
-    return password;
+    return (password);
 }
 
 void Manager::setPassword(const std::string& password) {

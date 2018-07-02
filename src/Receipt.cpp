@@ -6,7 +6,7 @@
 using namespace std;
 
 const vector<Item>& Receipt::getItemList() const {
-    return itemList;
+    return (itemList);
 }
 
 void Receipt::setItemList(const vector<Item>& itemList) {
